@@ -1,0 +1,142 @@
+.sidebar {
+  padding: 60px 20px;
+  flex: 0 1 240px;
+  background-color: #f4f6f8;
+  border-right: 1px solid #f1f1f1;
+  min-height: 100%;
+}
+
+.sidebar__button {
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgb(0 0 0 / 4%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  width: 100%;
+  gap: 8px;
+  cursor: pointer;
+  padding: 10px 12px;
+  margin-bottom: 30px;
+}
+
+.sidebar__list {
+  margin-bottom: 30px;
+}
+
+.sidebar__list-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: background-color 0.15s linear;
+
+  .badge {
+    margin-right: 8px;
+  }
+
+  &.active {
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 4%);
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  &.active:hover {
+    background-color: #fff;
+  }
+}
+
+.sidebar__list-remove-icon {
+  cursor: pointer;
+  margin-left: auto;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.sidebar__list-item:hover .sidebar__list-remove-icon {
+  opacity: 0.2;
+}
+
+.sidebar__list-item.active:hover .sidebar__list-remove-icon {
+  opacity: 0.2;
+}
+
+.sidebar__popup {
+  height: 150px;
+  width: 240px;
+  background: #ffffff;
+  box-shadow: 0px 6px 10px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  padding: 18px;
+  box-sizing: border-box;
+  position: relative;
+  top: -25px;
+  left: 10px;
+}
+
+.sidebar__popup-close-btn {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  cursor: pointer;
+}
+
+.sidebar__popup-input {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.sidebar__popup-colors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.sidebar__popup-colors .badge.active {
+  border: 2px solid #525252;
+}
+
+.sidebar__popup-colors .badge {
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.sidebar__popup .todo__button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.sidebar-button__icon {
+  width: 12px;
+}
+
+.sidebar__actions-button {
+  width: 100%;
+  margin-top: 10px;
+  background: #4dd599;
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
